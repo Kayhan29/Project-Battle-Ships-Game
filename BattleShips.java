@@ -74,10 +74,10 @@ public class BattleShips {
         System.out.println("\nDeploy your ships:");
         //Deploying five ships for player
         BattleShips.playerShips = 5;
-        for (int i = 1; i <= BattleShips.playerShips; ) {
-            System.out.print("Enter X coordinate for your " + i + " ship: ");
+        for (int i = 1; i <= BattleShips.playerShips;i++) {
+            System.out.println("Enter X coordinate for your " + i + " ship: ");
             int x = input.nextInt();
-            System.out.print("Enter Y coordinate for your " + i + " ship: ");
+            System.out.println("Enter Y coordinate for your " + i + " ship: ");
             int y = input.nextInt();
 
             if((x >= 0 && x < numRows) && (y >= 0 && y < numCols) && (grid[x][y] == " "))
